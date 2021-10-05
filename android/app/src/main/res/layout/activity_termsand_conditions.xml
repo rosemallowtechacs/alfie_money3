@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context=".TermsandConditionsActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+       <!-- <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allerbold"
+            android:gravity="center"
+            android:text="Financial Risk Profilling"
+            android:textSize="28sp" />-->
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txthome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/allerlight"
+                android:gravity="center"
+                android:text="We use metadata in your smartphone to help you build a credit profile so we could offer you financial services with the best options and lowest prices.\n\nWe do not access, store or edit your Personal Information and we strictly comply with the Personal Data Protection Act 2010.\n\nPlease provide your consent for us to access your smartphone data before we start our profiling."
+                android:textSize="18sp" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/proceedbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="17dp"
+        android:background="@drawable/homebtnbg"
+        android:fontFamily="@font/allerbold"
+        android:text="Proceed"
+        android:clickable="true"
+        android:textColor="@color/whitecolor" />
+    <ProgressBar
+    android:id="@+id/progressBar"
+    android:layout_above="@+id/proceedbtn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:max="100"
+    android:progress="0"
+    android:layout_gravity="center_vertical"
+        android:visibility="gone"
+    />
+
+</RelativeLayout>

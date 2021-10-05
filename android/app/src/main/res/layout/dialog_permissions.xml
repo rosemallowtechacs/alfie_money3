@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialogbg"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerbold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Allow Permission"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/allerbold"
+        android:gravity="center"
+        android:text="We require access to the following to \n generate your credit score"
+        android:textColor="@color/black"
+
+        android:textSize="11sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/black" />
+
+
+    <RelativeLayout
+        android:id="@+id/locationrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:src="@drawable/locationic" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerbold"
+                android:text="Location"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+            <!--<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerregular"
+                android:text="For Recommending the Nearby Doctors around you."
+                android:textColor="@color/black"
+                android:textSize="11sp" />-->
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/locationiv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:src="@drawable/undoneic" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/storagerl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:src="@drawable/storageic" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerbold"
+                android:text="Local Storage"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+          <!--  <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerregular"
+                android:text="To store Multimedia in the Local Storage"
+                android:textColor="@color/black"
+                android:textSize="11sp" />-->
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/storageiv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:src="@drawable/undoneic" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/smsrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:src="@drawable/smsic" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerbold"
+                android:text="SMS"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+          <!--  <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerregular"
+                android:text="To let the app read the SMS in the application"
+                android:textColor="@color/black"
+                android:textSize="11sp" />-->
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/smsiv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:src="@drawable/undoneic" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/telephonerl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:src="@drawable/smsic" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerbold"
+                android:text="Telephone"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+           <!-- <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerregular"
+                android:text="To let the app read the Telephonic Service in the application"
+                android:textColor="@color/black"
+                android:textSize="11sp" />-->
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/telephoneiv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:src="@drawable/undoneic" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/calenderrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:src="@drawable/smsic" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerbold"
+                android:text="Calender"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+           <!-- <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerregular"
+                android:text="To let the app read the Calender Events in the application"
+                android:textColor="@color/black"
+                android:textSize="11sp" />-->
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/calenderiv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:src="@drawable/undoneic" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/contactsrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:src="@drawable/smsic" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerbold"
+                android:text="Contacts"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+            <!--<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerregular"
+                android:text="To let the app read the Contacts in the application"
+                android:textColor="@color/black"
+                android:textSize="11sp" />-->
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/contactsiv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:src="@drawable/undoneic" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/calllogrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:src="@drawable/smsic" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerbold"
+                android:text="Call Log"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+           <!-- <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerregular"
+                android:text="To let the app read the Call Log in the application"
+                android:textColor="@color/black"
+                android:textSize="11sp" />-->
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/calllogiv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:src="@drawable/undoneic" />
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/confirmbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/homebtnbg"
+        android:fontFamily="@font/allerbold"
+        android:text="Confirm"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

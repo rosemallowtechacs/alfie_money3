@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/element"
+    android:background="#ffff"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    tools:context=".ConsentAuthorization">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:paddingLeft="10dp"
+           android:paddingRight="10dp"
+           android:orientation="vertical">
+           <TextView
+               android:id="@+id/consent_text"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Consent Authorization"
+               android:textStyle="bold"
+               android:fontFamily="@font/allerbold"
+               android:textSize="22sp"
+               android:textColor="#000"></TextView>
+          <!-- <RelativeLayout
+               android:id="@+id/opening_today_layout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:gravity="left">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Consent authorisation"
+                   android:textStyle="bold"
+                   android:fontFamily="@font/allerbold"
+                   android:textSize="22sp"
+                   android:textColor="#000"></TextView>
+
+               <ImageView
+                   android:layout_alignParentRight="true"
+                   android:id="@+id/close"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="right"
+                   android:src="@drawable/ic_baseline_close_24"/>
+           </RelativeLayout>-->
+
+
+           <TextView
+               android:id="@+id/body1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="By this consent, I/we understand and agree that:"
+               android:layout_margin="5dp"
+               android:textColor="#000"
+               android:textSize="13sp"
+               android:fontFamily="@font/allerlight"
+               android:gravity="center"
+               ></TextView>
+
+           <TextView
+               android:id="@+id/body2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="I.  You may access private and digital data from my device(s) for the purposes of determining my/our ceditworthiness and qualification for specific services provided by Alfie Tech Sdn Bhd.\nII.  You may conduct credit/trade check including CCRIS checks on me/us and when consent has been given individually, on our directors, shareholders, etc. with any registered Credit Bureaus at any time for as long as I/we have a trade relationship with you or where any dues remain unpaid and outstanding with you, for any one or more of the following purposes:"
+               android:layout_margin="2dp"
+               android:fontFamily="@font/allerlight"
+
+               android:textColor="#000"
+               android:textSize="13sp"
+               ></TextView>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:layout_marginLeft="10dp"
+               android:orientation="horizontal">
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/circle"></ImageView>
+               <TextView
+                   android:id="@+id/t1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/allerlight"
+                   android:textColor="#000"
+                   android:textSize="13sp"
+                   android:text="  Opening of account "></TextView>
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:layout_marginLeft="10dp"
+               android:orientation="horizontal">
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/circle"></ImageView>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/allerlight"
+                   android:id="@+id/t2"
+                   android:textColor="#000"
+                   android:textSize="13sp"
+                   android:text="  Credit/Account monitoring"></TextView>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:layout_marginLeft="10dp"
+               android:orientation="horizontal">
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/circle"></ImageView>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/allerlight"
+                   android:id="@+id/t3"
+                   android:textColor="#000"
+                   android:textSize="13sp"
+                   android:text="  Debt recovery"></TextView>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:layout_marginLeft="10dp"
+               android:orientation="horizontal">
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/circle"></ImageView>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/allerlight"
+                   android:id="@+id/t4"
+                   android:textColor="#000"
+                   android:textSize="13sp"
+                   android:text="  Credit/Account evaluation"></TextView>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:layout_marginLeft="10dp"
+               android:orientation="horizontal">
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/circle"></ImageView>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/allerlight"
+                   android:id="@+id/t5"
+                   android:textColor="#000"
+                   android:textSize="13sp"
+                   android:text="  Credit/Account review"></TextView>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:layout_marginLeft="10dp"
+               android:orientation="horizontal">
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/circle"></ImageView>
+               <TextView
+                   android:id="@+id/t6"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/allerlight"
+                   android:textColor="#000"
+                   android:textSize="13sp"
+                   android:text="  Legal documentation consequent to a contract or facility granted by you."></TextView>
+           </LinearLayout>
+           <TextView
+               android:id="@+id/body3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="III.  You may disclose any information on my/our conduct of my/our account(s) with you, to any business entity/ies for bonafide trade checking at any time. I/We am/are also aware and understand that such information will be provided to Alfie Tech Sdn Bhd, who may in turn share such information to subscribers of their service.\nIV.  Where you require any processing of my/our application to be processed by any processing center located outside Malaysia (including your Head Office), I/we hereby give consent to Alfie Tech Sdn Bhd to disclose my/our credit information except CCRIS, to such location outside Malaysia.\nV.  Apart from the above, I/we the undersigned do give my/our consent to you and the Alfie Tech Sdn Bhd, to process my/our personal data as per the PDPA Act. "
+               android:layout_margin="2dp"
+               android:fontFamily="@font/allerlight"
+               android:textColor="#000"
+               android:textSize="13sp"
+               ></TextView>
+
+
+            <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+                android:layout_gravity="center"
+              android:orientation="horizontal"
+              >
+                <CheckBox android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accept Terms and Condition "
+                    android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp" />
+
+
+            </RelativeLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dip"
+               android:layout_weight="1"
+               android:gravity="center|bottom"
+               android:orientation="vertical" >
+               <Button
+                   android:id="@+id/sub1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center|bottom"
+                   android:layout_margin="5dp"
+                   android:background="@drawable/homebtnbg"
+                   android:fontFamily="@font/allerbold"
+                   android:text="Submit"
+                   android:textColor="@color/whitecolor"
+                   android:textSize="10sp" />
+           </LinearLayout>
+
+
+       </LinearLayout>
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
