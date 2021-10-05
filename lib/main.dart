@@ -1,4 +1,5 @@
 
+import 'package:creditscore/Screen/Demo.dart';
 import 'package:creditscore/Screen/SplashScreen.dart';
 import 'package:creditscore/Screen/profile/Profile.dart';
 import 'package:creditscore/providers/auth_provider.dart';
@@ -50,7 +51,7 @@ class MyApp extends StatelessWidget {
                   fontFamily: Constants.fontName,
                   visualDensity: VisualDensity.adaptivePlatformDensity,
                 ),
-                home: SplashScreen());
+                home: MyApp11());
           },
         );
       },

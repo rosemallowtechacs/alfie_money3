@@ -378,7 +378,7 @@ print(response.statusCode);
                           child:Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: <Widget>[
-                              Center(
+                             /* Center(
                                 child: Padding(
                                   padding: const EdgeInsets.only(
                                     top: 1.0,
@@ -389,7 +389,7 @@ print(response.statusCode);
                                     height:100,
                                   ),
                                 ),
-                              ),
+                              ),*/
                               Center(
                                 child: Padding(
                                   padding: const EdgeInsets.only(
@@ -815,11 +815,11 @@ bool status=false;
         backgroundColor: Colors.white,
         body: SingleChildScrollView(child: Column(
           children: [
-            new Image.asset(
+           /* new Image.asset(
               Constants.developerLogo,
               width: 100,
               height: 100,
-            ),
+            ),*/
             Card(
                   elevation: 5,
                   margin: EdgeInsets.fromLTRB(20.0, 45.0, 20.0, 0.0),

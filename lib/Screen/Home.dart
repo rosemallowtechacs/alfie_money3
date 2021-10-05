@@ -70,7 +70,9 @@ class _Home1State extends State<Home> {
   final List<Widget> _children = [
     Dashboard(),
     Repayment(screen: false,),
-    Container(child: Center(child: Text("Notifications"),),),
+    Container(
+        child:Center(child:Text("Notifications"))
+    ),
     //NotificationScreen(),
   ];
 
@@ -247,10 +249,17 @@ class _Home1State extends State<Home> {
         ),
           //title: Text("Alternate Credit Score", style: TextStyle(color: Colors.white),),
         elevation: 0,
-          leading: IconButton(
-            icon: new  Icon(Icons.menu,color: Colors.white,),
-            onPressed: () => _scaffoldKey.currentState.openDrawer(),
-          ),
+          leading: Row(children: [
+            IconButton(
+              icon: new  Icon(Icons.menu,color: Colors.white,),
+              onPressed: () => _scaffoldKey.currentState.openDrawer(),
+            ),
+            new Image.asset(
+              Constants.developerLogo,
+              fit: BoxFit.contain,
+
+            ),
+          ],),
           backgroundColor: Colors.white,actions: [
         Center(child: Text(user.firstName??"",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 16.sp),textAlign: TextAlign.center,),),
         SizedBox(width: 10.w,),
@@ -408,17 +417,15 @@ class _Home1State extends State<Home> {
                     return AlertDialog(
                       content: StatefulBuilder(  // You need this, notice the parameters below:
                         builder: (BuildContext context, StateSetter setState) {
-                          return Column(  // Then, the content of your dialog.
-                            mainAxisSize: MainAxisSize.min,
+                          return Container(
+                              height: MediaQuery.of(context).size.height/4.5,
+                              child:Column(  // Then, the content of your dialog.
+                            mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Image.asset(
-                                Constants.money3Logo,
 
-                                height: 30.h,
-                              ),
                               SizedBox(height: 10.h,),
-                              Text("For user support and customer  service, please email us at"),
+                              Text("For user support and customer service, please email us at"),
 
                               GestureDetector(
                                   child: Text("hello@alfie.asia.", style: TextStyle(decoration: TextDecoration.underline, color: Colors.blue)),
@@ -430,10 +437,16 @@ class _Home1State extends State<Home> {
 
                                     });
                                   }
-                              )
+                              ),
+                              SizedBox(height: 10.h,),
+                              Center(child:Image.asset(
+                                Constants.money3Logo,
+                                scale: 20,
+
+                              ),)
 
                             ],
-                          );
+                          ));
                         },
                       ),
                     );

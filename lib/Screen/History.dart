@@ -498,7 +498,7 @@ class _HistoryscreenState extends State<Historyscreen> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 2,
+      length: 1,
       child: Scaffold(
         appBar: AppBar(
           leading: IconButton(
@@ -524,7 +524,7 @@ class _HistoryscreenState extends State<Historyscreen> {
             tabs: [
 
               Tab(icon: Icon(Icons.access_time), text: "Active loans",),
-              Tab(icon: Icon(Icons.access_time), text: "Rejected loans",),
+              //Tab(icon: Icon(Icons.access_time), text: "Rejected loans",),
 
 
             ],
@@ -534,7 +534,7 @@ class _HistoryscreenState extends State<Historyscreen> {
         body: TabBarView(
           children: [
             activeloan(),
-            rejectedloan()
+            //rejectedloan()
           ],
         ),
       ),

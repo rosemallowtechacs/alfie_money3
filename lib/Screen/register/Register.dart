@@ -361,8 +361,9 @@ class _RegistrationPageState extends BaseState<RegistrationPage>
                         ),
                         child: Image.asset(
                           Constants.money3Logo,
+                          scale: 11,
 
-                          height: 60.h,
+
                         ),
                       ),
                     ),
@@ -571,15 +572,18 @@ class _RegistrationPageState extends BaseState<RegistrationPage>
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
 
-                        Text("Powered by",  style: TextStyle(
-                          color: kSecondaryTextColor,
-                          fontSize: 12.sp,
-                          fontWeight: FontWeight.w400,
-                        ),),
-                        Image.asset(
-                          Constants.developerLogo1,
+                        Text(
+                          Constants.developerBy,
+                          style: TextStyle(
 
-                          height: 20.h,
+                              fontSize: 12.sp,
+
+                              color: Rmlightblue),
+                        ),
+                        new Image.asset(
+                          Constants.developerLogo1,
+                          scale: 7,
+
                         ),
                       ],) ,alignment: Alignment.bottomCenter,)
                   ],

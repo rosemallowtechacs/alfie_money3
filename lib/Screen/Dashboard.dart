@@ -234,7 +234,7 @@ class _DashboardState extends State<Dashboard> {
                   ),
                 ),
               ),
-              Padding(
+             /* Padding(
                 padding: EdgeInsets.symmetric(vertical: 0.0, horizontal: 10.0),
                 child: Card(
                   color: Colors.white,
@@ -244,7 +244,7 @@ class _DashboardState extends State<Dashboard> {
                     title: Text("Financial tips and tricks",style: TextStyle(fontSize: 12.sp,fontWeight: FontWeight.bold)),
                   ),
                 ),
-              ),
+              ),*/
 
 
             ],),),

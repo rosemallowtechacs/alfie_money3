@@ -159,7 +159,20 @@ class _RepaymentState extends BaseState<Repayment> implements RepaymentView {
                 ),
                 backgroundColor: Colors.white,
                 elevation: 0.0,):null,
-              body:loading==true?Center(child: CircularProgressIndicator(),):SingleChildScrollView(child:Container(
+              body:loading==true?Center(child: CircularProgressIndicator(),):data.isEmpty?Container(
+                alignment: Alignment.center,
+                child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  new Image.asset(
+                    Constants.activeLoans_im,
+                    width: 30.w,
+                    height: 30.w,
+                  ),
+                  SizedBox(height: 10,),
+                  Text("No Active Loans")
+                ],),):SingleChildScrollView(child:Container(
                   padding: EdgeInsets.all(10.0),
 
                   child: Stack(

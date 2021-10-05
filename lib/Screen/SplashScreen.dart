@@ -103,8 +103,8 @@ class SplashScreenState extends State<SplashScreen>
               ),
               new Image.asset(
                 Constants.developerLogo1,
-                width: 30.w,
-                height: 30.w,
+               scale: 7,
+
               ),
              SizedBox(height: 10.w,)
 

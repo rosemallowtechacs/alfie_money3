@@ -149,8 +149,7 @@ class _LoginPageState extends BaseState<LoginPage> implements LoginView{
                               ),
                               child: Image.asset(
                                 Constants.money3Logo,
-
-                                height: 60.h,
+                                scale: 11,
                               ),
                             ),
                           ),

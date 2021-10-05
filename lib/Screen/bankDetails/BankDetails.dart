@@ -491,11 +491,10 @@ class _RegistrationPageState extends BaseState<BankDetails> implements BankDetai
                           crossAxisAlignment: CrossAxisAlignment.center,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            new Image.asset(
+                            /*new Image.asset(
                               Constants.developerLogo,
-                              width: 100.w,
-                              height: 100.h,
-                            ),
+                              scale: 15,
+                            ),*/
 
                             Card(
                                 elevation: 5,
@@ -594,7 +593,7 @@ class _RegistrationPageState extends BaseState<BankDetails> implements BankDetai
                           child:Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: <Widget>[
-                              Center(
+                             /* Center(
                                 child: Padding(
                                   padding: const EdgeInsets.only(
                                     top: 1.0,
@@ -605,7 +604,7 @@ class _RegistrationPageState extends BaseState<BankDetails> implements BankDetai
                                     height:100.h,
                                   ),
                                 ),
-                              ),
+                              ),*/
                               Center(
                                 child: Padding(
                                   padding: const EdgeInsets.only(
@@ -787,7 +786,7 @@ class _RegistrationPageState extends BaseState<BankDetails> implements BankDetai
                           child:Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: <Widget>[
-                              Center(
+                             /* Center(
                                 child: Padding(
                                   padding: const EdgeInsets.only(
                                     top: 1.0,
@@ -798,12 +797,12 @@ class _RegistrationPageState extends BaseState<BankDetails> implements BankDetai
                                     height:100.h,
                                   ),
                                 ),
-                              ),
+                              ),*/
                               Center(
                                 child: Padding(
                                   padding: const EdgeInsets.only(
                                     bottom: 1.0,
-                                    top: 4.0,
+                                    top: 40.0,
                                   ),
                                   child: Text(
                                     "Bank Details",

@@ -145,7 +145,7 @@ class _RequestForgotPasswordOtpPageState extends BaseState<Forgotpassword> imple
                               child: Image.asset(
                                 Constants.developerLogo,
 
-                                height: 30.h,
+                                scale: 15,
                               ),
                             ),
                           ),

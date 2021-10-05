@@ -13,7 +13,7 @@ class Constants {
   static var KCURRENCY = "\$";
   static String appName='Money3';
   static String fontName='Multi';
-  static String developerBy='Powered by Alfie Tech';
+  static String developerBy='Powered by Alfie';
   static String developerLogo1='assets/images/logo.png';
   static String developerLogo='assets/images/money3.jpeg';
   static String collaborationLogo='assets/images/mrpay.png';
